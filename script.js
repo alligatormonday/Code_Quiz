@@ -14,18 +14,73 @@
 // THEN I can save my initials and score
 // ```
 
-// functions
-function buildQuiz();
-function showResults();
+const quizData = [
+    {
+        question: "JavaScript is a _____-side programming language?",
+        a: "client",
+        b: "server",
+        c: "both",
+        d: "none",
+        correct: "a",
+    },
+    {
+        question: "In JavaScript, how do you write 'Let's jam' in an alert box?",
+        a: "msgBox(Let's jam);",
+        b: "alertBox(Let's jam);",
+        c: "msg(Let's jam);",
+        d: "alert(Let's jam);",
+        correct: "d",
+    },
+    {
+        question: "How do you add a comment in JavaScript?",
+        a: "'A comment'",
+        b: "<!--A comment-->",
+        c: "~A comment~",
+        d: "//A comment",
+        correct: "d",
+    },
+    {
+        question: "What is the correct way to write a JavaScript array?",
+        a: "let names = (1:'ed', 2:'ein', 3:'spike')",
+        b: "let names = ['ed', 'ein', 'spike']",
+        c: "let names = 1 = ('ed'), 2 = ('ein'), 3 = ('spike')",
+        d: "let names = 'ed', 'ein', 'spike',",
+        correct: "b",
+    },
+    {
+        question: "In JavaScript, which operator is used to assign a value to a variable?",
+        a: "*",
+        b: "-",
+        c: "=",
+        d: "X",
+        correct: "c", 
+    },
+]
 
-// Constants
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
-const myQuestions = [ ... ];
 
-// Begins Quiz
-buildQuiz();
 
-// Event listeners
-submitButton.addEventListener('click', showResults);
+
+
+// Timer starts to countdown
+// Generate a timer that counts down from 60 seconds
+// set interval, clear interval, set timeout
+// - set interval - a function that executes after a specified interval of milliseconds
+// assign set interval to a variable, allows us to execute clear interval by passing in the variable name
+// - set timeout - if ever you want to execute code after a delay 
+
+
+
+// Question 1 is rendered
+// Populate question 1 with radio buttons for answer selection, and a submit button
+// If user does not select an answer and presses submit, alert user to answer the question
+// If user answers the question incorrectly, then 15 seconds is deducted from the timer
+
+// Once answer is submitted, the next question is rendered.
+// Users answer selection is saved and updates the quiz data to move from q1 to q2, etc. 
+
+// Once all questions are answered or timer reaches 0 then the game is over
+// User can save their initials and score
+// Score is based on time left on the clock
+// Once user submits their initials, they can see the cumulative scores ranked by highest to lowest
+
+
