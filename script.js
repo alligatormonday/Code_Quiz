@@ -57,9 +57,38 @@ const quizData = [
     },
 ]
 
+const renderQuizBtn = document.querySelector("#begin_quiz");
 
 
 
+let time = 60;
+
+let renderQuizEl = document.querySelector("#quiz_questions")
+
+function renderQuizQuestion(current_question){
+    renderQuizEl.innerHTML = `
+    <ul>
+    <li>${quizData[current_question].question}</li>
+    </ul>
+    `
+}
+
+// User clicks begin to kick off the quiz
+// Attach on click to index.html for begin button
+renderQuizBtn.addEventListener("click", function(){
+    // Start the timer
+    let quizTimer = setInterval( 
+        function(){
+            time--;
+            document.querySelector("#timer").innerHTML = time;
+            if (time === 0){
+                clearInterval(quizTimer)
+            }
+        },1000);
+
+    // Render question 1/quiz
+    renderQuizQuestion(0);
+})
 
 // Timer starts to countdown
 // Generate a timer that counts down from 60 seconds
@@ -67,8 +96,6 @@ const quizData = [
 // - set interval - a function that executes after a specified interval of milliseconds
 // assign set interval to a variable, allows us to execute clear interval by passing in the variable name
 // - set timeout - if ever you want to execute code after a delay 
-
-
 
 // Question 1 is rendered
 // Populate question 1 with radio buttons for answer selection, and a submit button
@@ -82,5 +109,3 @@ const quizData = [
 // User can save their initials and score
 // Score is based on time left on the clock
 // Once user submits their initials, they can see the cumulative scores ranked by highest to lowest
-
-
