@@ -53,41 +53,55 @@ const quizData = [
         b: "-",
         c: "=",
         d: "X",
-        correct: "c", 
+        correct: "c",
     },
 ]
 
 const renderQuizBtn = document.querySelector("#begin_quiz");
 
+let current_question = 0;
 
+const buttonA = document.querySelector("#a")
+
+const buttonB = document.querySelector("#b")
+
+const buttonC = document.querySelector("#c")
+
+const buttonD = document.querySelector("#d")
 
 let time = 60;
 
 let renderQuizEl = document.querySelector("#quiz_questions")
 
-function renderQuizQuestion(current_question){
+function renderQuizQuestion() {
     renderQuizEl.innerHTML = `
-    <ul>
-    <li>${quizData[current_question].question}</li>
-    </ul>
+    
+    <h3>${quizData[current_question].question}</h3>
+   
     `
+    buttonA.innerHTML = quizData[current_question].a;
+    buttonB.innerHTML = quizData[current_question].b;
+    buttonC.innerHTML = quizData[current_question].c;
+    buttonD.innerHTML = quizData[current_question].d;
+
 }
 
 // User clicks begin to kick off the quiz
 // Attach on click to index.html for begin button
-renderQuizBtn.addEventListener("click", function(){
+renderQuizBtn.addEventListener("click", function () {
     // Start the timer
-    let quizTimer = setInterval( 
-        function(){
+    let quizTimer = setInterval(
+        function () {
             time--;
             document.querySelector("#timer").innerHTML = time;
-            if (time === 0){
+            if (time === 0) {
                 clearInterval(quizTimer)
             }
-        },1000);
+        }, 1000);
 
     // Render question 1/quiz
-    renderQuizQuestion(0);
+    renderQuizQuestion();
+
 })
 
 // Timer starts to countdown
