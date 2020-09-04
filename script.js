@@ -34,7 +34,7 @@ const quizData = [
     {
         question: "How do you add a comment in JavaScript?",
         a: "'A comment'",
-        b: "<!--A comment-->",
+        b: '"<!--A comment-->"',
         c: "~A comment~",
         d: "//A comment",
         correct: "d",
@@ -75,14 +75,12 @@ let renderQuizEl = document.querySelector("#quiz_questions")
 
 function renderQuizQuestion() {
     renderQuizEl.innerHTML = `
-    
     <h3>${quizData[current_question].question}</h3>
-   
     `
-    buttonA.innerHTML = quizData[current_question].a;
-    buttonB.innerHTML = quizData[current_question].b;
-    buttonC.innerHTML = quizData[current_question].c;
-    buttonD.innerHTML = quizData[current_question].d;
+    buttonA.textContent = quizData[current_question].a;
+    buttonB.textContent = quizData[current_question].b;
+    buttonC.textContent = quizData[current_question].c;
+    buttonD.textContent = quizData[current_question].d;
 
 }
 
@@ -104,6 +102,24 @@ renderQuizBtn.addEventListener("click", function () {
 
 })
 
+const answers = document.querySelectorAll(".answer");
+
+for (let i = 0; i < answers.length; i++) {
+    answers[i].addEventListener("click", function () {
+        current_question++;
+        if (current_question >= quizData.length) {
+            console.log(current_question)
+            // Game is over
+        }
+        else {
+            renderQuizQuestion();
+        }
+    })
+
+}
+
+
+
 // Timer starts to countdown
 // Generate a timer that counts down from 60 seconds
 // set interval, clear interval, set timeout
@@ -112,7 +128,9 @@ renderQuizBtn.addEventListener("click", function () {
 // - set timeout - if ever you want to execute code after a delay 
 
 // Question 1 is rendered
-// Populate question 1 with radio buttons for answer selection, and a submit button
+// Populate question 1 with buttons for answer selection
+// Indicate to the user that the question is correct or incorrect
+// Then populate the next question until quiz is completed
 // If user does not select an answer and presses submit, alert user to answer the question
 // If user answers the question incorrectly, then 15 seconds is deducted from the timer
 
@@ -123,3 +141,4 @@ renderQuizBtn.addEventListener("click", function () {
 // User can save their initials and score
 // Score is based on time left on the clock
 // Once user submits their initials, they can see the cumulative scores ranked by highest to lowest
+
