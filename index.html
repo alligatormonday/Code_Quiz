@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Coding Quiz</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
             aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +36,24 @@
     <div id="quiz" class="quiz-container">
         <div id="quiz_title">
             <h2>Coding Quiz</h2>
-            <p>Click begin to start</p>
-            <button id="begin_quiz">Begin</button>
+            <p>Answer all of the quiz questions before the time runs out!
+            </p>
+            <p>Incorrect answers will penalize your time by fifty seconds.
+            </p>
+            <p>Once you've completed the quiz, the clock will stop and reflect your score.
+            </p>
+            <p>Enter your initials to save your score. 
+            </p>View the highscores page to see how you rank against others! Are you ready? 3...2..1.
+            </p>
+            <button type="button"  id="begin_quiz" class="btn btn-primary">Let's Jam</button>
         </div>
         
         <div id="quiz_questions"></div>
         <div id="quiz_answers">
-            <button class="answer" id="a"></button>
-            <button class="answer" id="b"></button>
-            <button class="answer" id="c"></button>
-            <button class="answer" id="d"></button>
+            <button type="button" class="answer btn btn-primary" id="a"></button>
+            <button type="button" class="answer btn btn-primary" id="b"></button>
+            <button type="button" class="answer btn btn-primary" id="c"></button>
+            <button type="button" class="answer btn btn-primary" id="d"></button>
         </div>
         
     </div>
@@ -54,8 +62,6 @@
 
     <!-- JavaScript -->
     <script src="script.js" type="text/javascript"></script>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/6490ddb3f6.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

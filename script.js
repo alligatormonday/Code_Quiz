@@ -65,7 +65,7 @@ const title = document.getElementById("quiz_title");
 
 const answers = document.querySelectorAll(".answer");
 
-let time = 50;
+let time = 100;
 
 let current_question = 0;
 
@@ -132,7 +132,7 @@ renderQuizBtn.addEventListener("click", function () {
 for (let i = 0; i < answers.length; i++) {
   answers[i].addEventListener("click", function () {
     if (answers[i].id !== quizData[current_question].correct) {
-      time -= 15;
+      time -= 50;
     }
     current_question++;
     if (current_question >= quizData.length) {
@@ -171,7 +171,7 @@ for (let i = 0; i < answers.length; i++) {
             JSON.stringify(highScores)
           );
         }
-        location.reload()
+        location.reload();
       });
     } else {
       renderQuizQuestion();
