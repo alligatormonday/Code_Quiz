@@ -5,7 +5,7 @@ window.onload = () => {
 };
 
 const quiz = document.getElementById("quiz");
-const quizAnswers = document.getElementById("quiz_answers");
+// const quizAnswers = document.getElementById("quiz_answers");
 
 const quizData = [
   {

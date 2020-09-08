@@ -1,3 +1,7 @@
 #quiz_answers > button {
     display: none;
 }
+
+.quiz-container {
+    padding-top: 40px;
+}
