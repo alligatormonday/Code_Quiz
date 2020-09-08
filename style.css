@@ -2,6 +2,10 @@
     display: none;
 }
 
+.container{
+    padding-top: 40px;
+}
+
 .quiz-container {
     padding-top: 40px;
 }
