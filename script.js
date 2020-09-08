@@ -1,11 +1,13 @@
+// Local Storage
 window.onload = () => {
   if (!window.localStorage.getItem("high-scores")) {
     window.localStorage.setItem("high-scores", "[]");
   }
 };
+// Local Storage End
 
+// Constants
 const quiz = document.getElementById("quiz");
-// const quizAnswers = document.getElementById("quiz_answers");
 
 const quizData = [
   {
@@ -64,13 +66,17 @@ const buttonD = document.querySelector("#d");
 const title = document.getElementById("quiz_title");
 
 const answers = document.querySelectorAll(".answer");
+// Constants End
 
+// Variables
 let time = 100;
 
 let current_question = 0;
 
 let renderQuizEl = document.querySelector("#quiz_questions");
+// Variables end
 
+// Functions
 function hideTitle() {
   document.getElementById("quiz_title").style.display = "none";
 }
@@ -84,7 +90,9 @@ function renderQuizQuestion() {
   buttonC.textContent = quizData[current_question].c;
   buttonD.textContent = quizData[current_question].d;
 }
+// Functions end
 
+// Click Events
 // User clicks begin to kick off the quiz
 // Attach on click to index.html for begin button
 renderQuizBtn.addEventListener("click", function () {
@@ -178,6 +186,7 @@ for (let i = 0; i < answers.length; i++) {
     }
   });
 }
+// Click Events end
 
 // Timer starts to countdown
 // Generate a timer that counts down from 60 seconds

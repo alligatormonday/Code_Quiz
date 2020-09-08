@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Coding Quiz</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
@@ -30,9 +31,11 @@
                 <a class="nav-link" href="highscores.html">View High Scores</a>
               </li>
             </ul>
+        </div>
     </nav>
+    <!-- Timer -->
     <div id="timer" class="time-container"></div>
-
+    <!-- Quiz Content -->
     <div id="quiz" class="quiz-container">
         <div id="quiz_title">
             <h2>Coding Quiz</h2>
@@ -43,14 +46,15 @@
             <p>Once you've completed the quiz, the clock will stop and reflect your score.
             </p>
             <p>Enter your initials to save your score. 
-            </p>View the <a href="highscores.html">High Scores</a> page to see how you rank against others! Are you ready? 3...2..1.
+            </p>
+            <p>View the <a href="highscores.html">High Scores</a> page to see how you rank against others! Are you ready? 3...2..1.
             </p>
             <button type="button"  id="begin_quiz" class="btn btn-primary">Let's Jam</button>
         </div>
         
         <div id="quiz_questions"></div>
 
-        <div id="quiz_answers" class="answer-buttons">
+        <div id="quiz_answers">
             <button type="button" class="answer btn btn-primary" id="a"></button>
             <button type="button" class="answer btn btn-primary" id="b"></button>
             <button type="button" class="answer btn btn-primary" id="c"></button>

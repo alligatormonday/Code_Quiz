@@ -1,5 +1,8 @@
+// Constants 
 const userHighscores = document.querySelector("#highscore-list");
+// Constants end
 
+// Local Storage
 window.onload = () => {
     let userScores = JSON.parse(window.localStorage.getItem("high-scores"));
     userScores.forEach((item) => {
@@ -8,4 +11,4 @@ window.onload = () => {
         userHighscores.appendChild(li);
         });
 }
-
+// Local Storage end
