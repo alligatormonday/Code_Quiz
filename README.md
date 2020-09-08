@@ -24,9 +24,9 @@ Upon completing this assignment, I feel more confident about the relationship be
 
 ## Credits
 
-[Dane_Burns](https://github.com/daneburns) - helped me with assembling time functionality with user input
-[Andrew Moses](https://github.com/andrewmosesdrive) - assisted with developing local storage functionality
-[Brandon_Burrus](https://github.com/BrandonBurrus) - helped with button functionality within JavaScript
-John Hernandez (Coding Bootcamp Tutor) - helped with turning my pseudo code into working code
+* [Dane_Burns](https://github.com/daneburns) - helped me with assembling time functionality with user input
+* [Andrew Moses](https://github.com/andrewmosesdrive) - assisted with developing local storage functionality
+* [Brandon_Burrus](https://github.com/BrandonBurrus) - helped with button functionality within JavaScript
+* John Hernandez (Coding Bootcamp Tutor) - helped with turning my pseudo code into working code
 
 
