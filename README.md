@@ -2,11 +2,25 @@
 
 ## Author: alligatormonday (Joseph Jepson)
 
+## Technologies Used
+
+* Bootstrap
+
+## Deployment
+
+![Image of Quiz](https://i.imgur.com/MYnDUPo.png)
+
+![Image of Quiz](https://i.imgur.com/YRkTd5S.png)
+
+![Image of Quiz](https://i.imgur.com/teg98Zs.png)
+
+![Image of Quiz](https://i.imgur.com/6DX5m2n.png)
+
+View deployment: [Code_Quiz](https://alligatormonday.github.io/Code_Quiz/index.html)
+
 ## Description
 
 This is my submission for my fourth homework assignment for the University of Arizona - Coding Bootcamp for Full-Stack Web Development program.
-
-View deployment here: [Code_Quiz](https://alligatormonday.github.io/Code_Quiz/index.html)
 
 In this assignment, my goals were as follows:
 
