@@ -8,7 +8,7 @@
 
 ## Deployment
 
-![Image of Quiz](https://i.imgur.com/MYnDUPo.png)
+![Image of Quiz](https://i.imgur.com/XDQiZYq.png)
 
 ![Image of Quiz](https://i.imgur.com/YRkTd5S.png)
 
